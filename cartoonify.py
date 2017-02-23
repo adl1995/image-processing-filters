@@ -24,18 +24,18 @@ def cartoonify(im, display=False):
 	    NOTE: This function expects a gaussian filtered image
 	"""
 
-	kernel, kern_size = np.array([[-1,-1,-1],[0,0,0],[1,1,1]]), 3
+	kernel, kern_size = np.array([[-1,-1,-1] ,[0,0,0] ,[1,1,1]]), 3
 	gx, gy = np.zeros_like(im, dtype=float), np.zeros_like(im, dtype=float)
 
-	for i in range(im.shape[0]-(kern_size-1)):
-		for j in range(im.shape[1]-(kern_size-1)):
-			window = im[i:i+kern_size, j:j+kern_size] 
+	for i in range(im.shape[0] - (kern_size-1)):
+		for j in range(im.shape[1] - (kern_size-1)):
+			window = im[i:i + kern_size, j:j + kern_size] 
 			gx[i,j], gy[i,j] = np.sum(window * kernel.T), np.sum(window * kernel)																																																																																																																																																																																							
 
 	magnitude = np.sqrt(gx**2 + gy**2)
 	magnitude = magnitude.astype(np.int64, copy=False)
 
-	cartoon = im + (im+magnitude)
+	cartoon = im + (im + magnitude)
 
 	if display == 1:
 		plt.imshow(cartoon, cmap='gray')

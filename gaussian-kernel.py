@@ -10,9 +10,9 @@ def gFilter(sigma):
     x = -2 * sigma
     while(x<2 * sigma + 1):
         y = -2 * sigma
-        while(y<2 * sigma+1):
+        while(y<2 * sigma + 1):
             norm = 1/((2 * 3.14159)*(sigma**2))
-            num = (x**2.0)+(y**2)
+            num = (x**2.0) + (y**2)
             denm = 2.0 * (sigma**2)
             kernel[x+2 * sigma, y+2 * sigma] = norm * exp(-num/denm)
             y+=1
