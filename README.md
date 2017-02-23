@@ -19,11 +19,7 @@ Description and Usage
 
  A non-linear, edge-preserving and noise-reducing smoothing filter for images.
 
-$$
-\Gamma(z) = 
- \frac{1}{W_p} \sum_{x_i \in \Omega} I(x_i)f_r(\|I(x_i)-I(x)\|)g_s(\|x_i-x\|),
-,.
-$$
+![](https://latex.codecogs.com/gif.latex?\Gamma(z)&space;=&space;\frac{1}{W_p}&space;\sum_{x_i&space;\in&space;\Omega}&space;I(x_i)f_r(\|I(x_i)-I(x)\|)g_s(\|x_i-x\|),)
 
 Function description: 
 
