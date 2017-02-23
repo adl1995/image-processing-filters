@@ -33,10 +33,8 @@ bFilter(I, sigmad, sigmar, display)
 
  Creates a blurring effect in an image. It is a widely used effect in graphics software, typically to reduce image noise and reduce detail
 
-$$
-\Gamma(z) = 
- G(x,y)={\frac {1}{2\pi \sigma ^{2}}}e^{-{\frac {x^{2}+y^{2}}{2\sigma ^{2}}}}
-$$
+![](https://latex.codecogs.com/svg.latex?\Gamma(z)&space;=&space;G(x,y)={\frac&space;{1}{2\pi&space;\sigma&space;^{2}}}e^{-{\frac&space;{x^{2}&plus;y^{2}}{2\sigma&space;^{2}}}})
+ ^{2}}}e^{-{\frac {x^{2}+y^{2}}{2\sigma ^{2}}}}" /></a>
 
 Function description: 
 
