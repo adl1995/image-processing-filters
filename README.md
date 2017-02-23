@@ -42,7 +42,7 @@ gFilter(sigma):
 >  sigma: for blurring intensity
 
 
-#### <i class=""></i> Cartoonification
+#### <i class=""></i> Cartoonify
 
 Receives an image and adds its gradient magnitude in it and returns a semi-cartoon image after adding the result in the original image. 
 
@@ -51,3 +51,23 @@ Function description:
 cartoonify(im, display=False):
 >  im: image to cartoonify
 >  display: whether to display the image or not
+
+#### <i class=""></i> Sketch
+
+Generates a sketch of given image
+
+Function description: 
+
+rgb2sketch(img, filter_size):
+>  img: image
+>  filter_size: size of filter to apply
+
+#### <i class=""></i> Local Histogram Generator
+
+Generates a histogram with variable number of bins computer using the filter size  
+
+Function description: 
+
+localHistEq(img, filter_size):
+>  img: image
+>  filter_size: determines the number of bins and local area
